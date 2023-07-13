@@ -1,0 +1,1194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+
+
+*{
+    margin:2;
+    
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(https://www.fmrealty.com/images/uploads/Recos/35009/Content/785269/shopping-center-silver-spring.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*header*/
+
+header{
+    width:100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*padding: 30px 10%;
+    /*background: rgba(0,0,0,0.2);*/
+    font-family: Montserrat;
+    padding-top: 10px;
+   
+   
+
+
+}
+header img{
+    width: 10%;
+    position: relative;
+    top: 40px;
+    left:30px;
+    
+    
+}
+.flag{
+    color: rgb(255, 196, 87);
+}
+.title{
+    font-size:40px ;
+    color:white;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+   
+}
+.welcome{
+   
+    display: block;
+    
+    left: 50%;
+    line-height: .4;
+    text-align: center;
+   
+}
+
+.welcome h1{
+    
+    text-transform: uppercase;
+    
+    font-family: Montserrat;
+    font-weight:600;
+    
+}
+
+.intro1{
+    top:100px;
+    color: rgb(255, 196, 87);
+    font-size:130px;
+    letter-spacing: 8px;
+    
+    background-color: transparent;
+    position: relative;
+    animation: text 3s 1;
+}
+
+.intro2{
+    position: relative;
+    top: 40px;
+    font-size: 70px;
+    color:red;
+    animation-fill-mode: backwards;
+    animation: opc 2s ease-in-out ;
+   
+}
+
+
+ @keyframes text{
+    0%{
+        opacity: 0;
+        color: transparent;
+        margin-bottom:10px ;
+    }
+
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: 0px;
+    }
+
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: 100px;
+    }
+
+   
+}
+
+@keyframes opc {
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 0%;
+    }
+    99.9%{
+        opacity: 0%;
+        
+    }
+    
+
+    
+}
+
+
+
+
+
+nav li{
+    display: inline-block;
+    padding:0px 20px;
+    list-style:none;
+    font-weight: 400;
+    
+
+}
+li a{
+    font-size: 30px;
+    text-decoration: none;
+}
+
+li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color:red ;
+    display: block;
+}
+
+
+
+li a:hover::after{
+    width: 100%;
+    transition:width 0.3s linear ;
+}
+li a:hover{
+   color:  white;
+}
+
+
+
+
+
+
+a,button{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+header button{
+    background:red ;
+    /*border: .5px solid rgb(252, 200, 105);*/
+    border: red;
+    width:160px ;
+    text-decoration: none;
+    text-shadow: 0px 3px rgba(0,0,0,0.2);
+    border-radius: 5px ;
+    padding: 9px 25px;
+    font-weight: 500;
+    margin-right: 40px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    cursor:pointer;
+    -webkit-transition-duration: .3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property:box-shadow, transform ;
+    transition-property: box-shadow, transform;
+
+
+}
+
+button:hover, button:focus, button:active{
+    box-shadow: 0,0,0 20px rgba(0,0,0,0.5);
+    webkit-transform:scale(1.1);
+    transform:scale(1.1)
+}
+
+/*header*/
+
+/*RUBRIC*/
+
+.rubric{
+    width:1300px;
+    margin:auto;
+    height: 90vh;
+    border-radius: 25px;
+    background-color: rgba(0,0,0,0.4);
+    font-family:Montserrat;
+    color:white; 
+    box-shadow:inset -5px -5px rgba(0,0,0,0.5) ;
+}
+.rubricContainer {
+   font-family: "Montserrat";
+   font-weight:400; 
+   color: white;
+   padding:40px;
+   line-height: 1.3;
+   font-size: 1.15em;
+  
+   
+}
+
+.rubricContainer h1{
+    text-align: center;
+}
+
+.rubricList li{
+    list-style-type: disc;
+}
+
+/*RUBRIC*/
+
+/*FOOTER*/
+
+.footer{
+    
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    
+    bottom: 0;
+}
+
+.footer a{
+    display: inline-block;
+    font-family: Montserrat;
+    font-weight: 400;
+    margin:10px;
+    font-size: 1.3em;
+
+}
+
+.footer a:hover{
+    color:rgb(252, 200, 105);
+}
+
+
+
+
+
+/*form*/
+
+.formContainer{
+    width:800px;
+    margin:auto;
+    height: 100vh;
+    border-radius: 25px;
+    background-color: rgba(0,0,0,0.4);
+    font-family:Montserrat;
+    color:white; 
+    box-shadow:inset -5px -5px rgba(0,0,0,0.5) ;
+    
+}
+
+#reviewBox{
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow:inset -3 -3px rgba(0,0,0,0.5) ;
+    color:white;
+    padding: 10px;
+    
+}
+.attractions{
+    background:red;
+    padding:10px;
+    border-radius: 20px;
+    font-weight: 600;
+    box-shadow: 2px 2px 2px 2px #333535;
+    margin-bottom: 10px;
+}
+
+#Visit h2{
+    text-align: center;
+    padding:40px;
+    font-weight: 400;
+}
+
+.textBoxes input{
+    
+    padding:15px;
+    margin:5px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow:inset -3 -3px rgba(0,0,0,0.5) ;
+    color:white;
+}
+
+.textBoxes div{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+fieldset{
+    border: none;
+    margin-left: 20px;
+
+}
+
+.silverSpring input{
+    padding:5px;
+
+}
+
+#slideContainer{
+    margin-top: 10px;
+    margin-left:  20px;
+}
+#sub{
+    text-align: right;
+}
+#sub input{
+    background:red ;
+    /*border: .5px solid rgb(252, 200, 105);*/
+    border: red;
+    width:160px ;
+    text-decoration: none;
+    text-shadow: 0px 3px rgba(0,0,0,0.2);
+    border-radius: 5px ;
+    padding: 9px 25px;
+    font-weight: 500;
+    margin-right: 40px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    cursor:pointer;
+    -webkit-transition-duration: .3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property:box-shadow, transform ;
+    transition-property: box-shadow, transform;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    
+
+}
+
+#sub input:hover, button:focus, button:active{
+    box-shadow: 0,0,0 20px rgba(0,0,0,0.5);
+    webkit-transform:scale(1.1);
+    transform:scale(1.1)
+}
+
+/* form  */
+
+/*parks */
+
+.Contentcontainer{
+    
+    background:#cfcfcf;
+    width: 1200px;
+    height: 180vh;
+    margin: auto;
+    margin-top: 90px;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow:  4px 4px 4px  rgba(0,0,0,0.7) ;
+}
+
+.treeBackground{
+    background: url(https://upload.wikimedia.org/wikipedia/commons/a/a8/Sligo_Creek_Trail_Kemp_Mill_10.jpg);
+    height: 200vh;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+.ParkHeading{
+    font-family: Montserrat;
+    font-weight: 600;
+    text-align: center;
+    font-size: 3em;
+    padding-top: 2px;
+}
+
+.sligo img{
+    float: left;
+    width: 40%;
+    border-radius: 15px;
+    margin-right: 30px;
+   
+
+}
+
+.Contentcontainer p{
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 1.3em;
+    
+}
+hr{
+    color: black;
+   
+}
+
+.wheaton{
+    padding-top:65px;
+}
+
+.wheaton h2{ 
+    text-align: right;
+    
+}
+.wheaton img{
+    float: right;
+    width: 40%;
+    border-radius: 15px;
+    margin-left: 30px;
+}
+
+.mlk{
+    padding-top: 100px;
+}
+
+.mlk img{
+    width: 40%;
+    float: left;
+    border-radius: 15px;
+    margin-right: 30px;
+}
+
+.mlk p{
+    padding-top: 30px;
+}
+
+.sliderBtn{
+    position: absolute;
+}
+
+
+/*PARKS */
+
+
+/*DOWNTOWN SILVER SPRING */
+
+.downtownContainer{
+    background:#cfcfcf;
+    width: 1200px;
+    height: 350vh;
+    margin: auto;
+    margin-top: 90px;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow:  4px 4px 4px  rgba(0,0,0,0.7) ;
+}
+
+.citybg{
+    background: url(Downtown-Silver-Spring.jpg);
+    height: 420vh;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+.dtspHeader{
+    
+    text-align: center;
+   
+    font-weight: 600;
+    font-size: 2.7em;
+}
+
+#dtspPHOTO{
+    position: relative;
+    width: 60%;
+    height: 400px;
+    border-radius: 10px;
+    float: left;
+    margin:15px;
+  
+
+
+}
+.map{
+
+    
+    margin-top: 70px;
+   
+   
+}
+
+.caption p{
+ 
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1.5;
+    
+}
+
+.leftIMG{
+    
+    width:65%;
+    border-radius: 25px;
+    
+    
+
+}
+
+.dtspText h2{
+    
+}
+.dtspText{
+    top:80px;
+    text-align: center;
+}
+.dtspText p{
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+/*DOWNTOWN SILVER SPRING */
+
+
+
+
+/*RESTURANTS */
+
+.restBackground{
+    background: url(https://upload.wikimedia.org/wikipedia/commons/a/a8/Sligo_Creek_Trail_Kemp_Mill_10.jpg);
+    height: 340vh;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Montserrat;
+    
+}
+
+.restContainer{
+    background:#cfcfcf;
+    width: 1200px;
+    height: 300vh;
+    margin: auto;
+    margin-top: 90px;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow:  4px 4px 4px  rgba(0,0,0,0.7) ;
+}
+
+.paccis{
+    padding-top: 30px;
+}
+.paccisDescription{
+    padding-top: 60px;
+}
+
+.paccis img{
+    
+    width: 63%;
+    border-radius: 15px;
+    float: right;
+    margin:10px;
+}
+
+.paccis p{
+    
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+
+.sushi img{
+    width: 63%;
+    border-radius: 15px;
+    float: left;
+    margin:15px;
+    
+}
+
+.sushi p{
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.sushiDescription{
+    padding-top: 240px;
+}
+
+
+.cubanos p {
+    font-weight: 400;
+    font-size: 1.1em;
+
+}
+
+.cubanosDescription{
+    padding-top: 150px;
+}
+
+.cubanos img{
+    width: 63%;
+    border-radius: 15px;
+    float: right;
+    margin:10px;
+}
+
+.jerkHouse img{
+    width: 63%;
+    border-radius: 15px;
+    float: left;
+    margin:15px;
+}
+
+.jerkHouse p{
+    font-weight: 400;
+    font-size: 1.1em;
+
+}
+
+.jerkDescription{
+    padding-top: 100px;
+}
+
+/*RESTURANTS */
+
+
+/*ATTRACTIONS */
+.attractionsContainer{
+    background:#cfcfcf;
+    width: 1200px;
+    height: 240vh;
+    margin: auto;
+    margin-top: 90px;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow:  4px 4px 4px  rgba(0,0,0,0.7) ;
+}
+.attractHeader{
+    text-align: left;
+    padding-top: 50px;
+    font-weight: 400;
+    
+
+}
+
+
+.attractHeader img{
+
+    border-radius: 15px;
+    width:60%;
+    float:right;
+    margin:10px;
+    
+}
+
+.attractHeader p{
+    font-weight: 400;
+    font-size: 1.3em;
+
+}
+
+
+/*ABOUT*/
+
+.aboutText{
+    padding-left: 20px;
+    
+}
+
+
+
+.MAP{
+    
+    border-radius: 15px;
+    top:0;
+    float:left;
+    margin-right: 30px;
+    
+}
+
+
+
+/*ABOUT*/
+
+/*MEDIA QURiES*/
+
+@media screen and (max-width:1200px){
+
+    /*HEADER + NAV */
+
+    header{
+        height:30px;
+        display: inline-flex;
+        
+
+    }
+
+    header img{
+        left:0;
+        top:20px;
+
+    }
+
+    a,button{
+        font-size:10px;
+    }
+
+    nav li a{
+        font-size: .7em;
+    }
+
+    .intro1{
+        font-size: 60px;
+    }
+
+    .intro2{
+        font-size: 55px;
+    }
+
+     /*HEADER + NAV */
+
+     .Contentcontainer, .restContainer, .downtownContainer, .attractionsContainer{
+        width:800px;
+        display: block;
+     }
+
+     .Contentcontainer, .attractionsContainer p{
+        font-size: 1em;
+     }
+
+     .paccis, .cubanos, .jerkHouse p{
+        font-size: 1em;
+     }
+     .cubanos img{
+        width: 50%;
+     }
+
+     .paccis img{
+        width: 50%;
+     }
+
+     .sushi p{
+        font-size: 1em;
+        
+     }
+
+     .sushi  img{
+        width:50%;
+        float:right;
+
+
+     }
+
+     .jerkHouse img{
+        width: 50%;
+        float: right;
+     }
+
+     .sushi h2{
+        text-align: left;
+     }
+
+     .sushiDescription, .cubanosDescription{
+        padding-top: 0;
+     }
+
+     .jerkDescription{
+        padding-top: 0;
+     }
+
+     /*FORM */
+     .formContainer{
+        width:500px;
+        height: 500px;
+        top:0;
+     }
+
+    #Visit h2{
+        font-size: 1em;
+    }
+    #Identity, #Grouping, #date{
+        font-size: .7em;
+
+    }
+
+    .attractions{
+        padding:5px;
+        border-radius: 10px;
+        font-size:.6em ;
+    }
+    .textBoxes input{
+        font-size:.6em ;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    form{
+        top:0;
+    }
+
+    label{
+        font-size: .6em;
+    }
+    
+    #slideContainer{
+        font-size: .6em;
+    }
+
+    #sub{
+        position: absolute;
+        text-align: right;
+        
+        
+        
+    }
+
+    #sub input{
+        font-size: .7em;
+        width:100px;
+        padding: 3px 15px;
+        top:0;
+        bottom:100px;
+       
+    }
+
+    /*RUBRIC*/
+
+    .rubric{
+        width:850px;
+        height: 600px;
+        top:0;
+    }
+
+    .rubricContainer{
+        font-size: .8em;
+    }
+
+    .Contentcontainer p{
+        font-size: 1em;
+    }
+
+
+    /*RUBRIC*/
+
+
+     /*RESTUARANTS */
+
+     .restContainer{
+        height: 230vh;
+      }
+}
+
+
+
+@media screen and (max-width:1000px){
+    
+     /*HEADER + NAV */
+    header{
+        display: inline-flex;
+        justify-content: space-evenly;
+    }
+
+    header button{
+        width:60px;
+        padding:3px 10px;
+        right:50px;
+    }
+
+    a,button{
+        font-size:8px ;
+    }
+
+    nav li a{
+        font-size: .7em;
+    }
+     /*HEADER + NAV */
+
+     .caption p{
+        font-size: 1.1em;
+    }
+
+    #dtspPHOTO{
+        width:40%;
+        height: 70%;
+        
+    }
+
+    .downtownContainer{
+        height:350vh ;
+    }
+
+    body{
+        height: 100vh; 
+    }
+
+    .Contentcontainer p{
+        font-size: .9em;
+    }
+
+    
+    
+}
+
+@media screen and (max-width:900px){
+
+    /*PARKS*/
+    .Contentcontainer, .restContainer,.downtownContainer, .attractionsContainer{
+        width:600px;
+    }
+
+
+    
+    .Contentcontainer p{
+        font-size: .8em;
+    }
+
+    .restContainer{
+        height: 250vh;
+    }
+
+    .sligo img{
+        bottom: 5px;
+        margin: 10px;
+
+    }
+
+    .wheaton p{
+        text-align: left;
+    }
+
+    .wheaton img{
+        float:left;
+        margin:10px;
+    }
+
+    .wheaton h2{
+        text-align: left;
+    }
+
+    .mlk img{
+        margin:10px;
+
+    }
+
+    
+
+    /*PARKS  */
+
+    /*Dowtown Silver Spring  */
+
+    .dtspText{
+        font-size: .8em;
+    }
+
+
+    .downtownContainer{
+        height:250vh ;
+    }
+
+    .attractionsContainer{
+        height: 230vh;
+    }
+
+
+    
+
+        /*Dowtown Silver Spring  */
+    
+
+        #reviewBox{
+            width:80%;
+        }
+    
+    /*FORM  */
+
+    /*RUBRIC*/
+
+    .rubric{
+        width:550px;
+        height: 680px;
+        top:0;
+    }
+
+    .rubricContainer{
+        font-size: .8em;
+    }
+
+
+    .Contentcontainer{
+        height: 140vh;
+    }
+
+    /*RUBRIC*/
+
+
+    
+    
+}
+
+@media screen and (max-width:600px){
+
+     /*HEADER + NAV */
+    nav li a{
+        font-size: .5em;
+    }
+
+    header img{
+        left:0;
+        top:0;
+    }
+
+    .intro1 {
+        font-size: 40px;
+    }
+
+    .intro2{
+        font-size: 35px;
+    }
+
+     /*HEADER + NAV */
+
+     /*PARKS  */
+     .Contentcontainer, .restContainer,.downtownContainer, .attractionsContainer{
+        width:400px;
+        
+     }
+
+     .Contentcontainer{
+        height: 130vh;
+     }
+
+     .ParkHeading{
+        font-size: 2em;
+        
+     }
+     .sligo h2{
+        font-size: .9em;
+     }
+
+     .sligo{
+        top:10px;
+     }
+
+     .wheaton{
+        padding-top: 0;
+     }
+
+     .mlk{
+        padding-top: 0;
+     }
+
+    
+    /*PARKS */
+
+     /*RESTUARANT */
+    .paccis p{
+        font-size: .9em;
+    }
+
+    .cubanos p{
+        font-size:.9em ;
+    }
+
+    .restContainer{
+        height: 230vh;
+    }
+
+    /*RESTUARANT */
+
+    /*DOWNTOWN */
+
+    .downtownContainer{
+        height:280vh ;
+    }
+
+      /*DOWNTOWN */
+
+    /*FORM */
+
+    .formContainer{
+        width:300px;
+        height:600px;
+        top:0;
+     }
+
+    #Visit h2{
+        font-size: 1em;
+    }
+    #Identity, #Grouping, #date{
+        font-size: .7em;
+
+    }
+
+    .attractions{
+        padding:5px;
+        border-radius: 10px;
+        font-size:.6em ;
+    }
+
+    .attractionsContainer{
+        height: 10vh;
+    }
+    .textBoxes input{
+        font-size:.6em;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    form{
+        top:0;
+    }
+
+    label{
+        font-size: .6em;
+    }
+    
+    #slideContainer{
+        font-size: .6em;
+    }
+
+    #sub{
+        position: absolute;
+        text-align: right;
+        top:400;
+        
+        
+    }
+
+    #sub input{
+        font-size: .7em;
+        width:100px;
+        padding: 3px 15px;
+        top:0;
+        left:10px;
+    }
+
+    .attractionsContainer{
+        height: 250vh;
+    }
+
+    #reviewBox{
+        width:80%;
+    }
+
+    /*RUBRIC*/
+
+    .rubric{
+        width:350px;
+        height: 650px;
+        top:0;
+    }
+
+    .rubricContainer{
+        font-size: .6em;
+    }
+
+    /*RUBRIC*/
+    
+
+
+}
+
+
+
+@media screen and (max-width:300px){
+    .intro1 {
+        display: none;
+    }
+
+    .intro2{
+        display: none;
+    }
+}

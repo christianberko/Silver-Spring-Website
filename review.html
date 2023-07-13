@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "project1.css">
+    <script src = "script.js"></script>
+
+
+    <title>Write a Review </title>
+</head>
+
+
+
+
+<body>
+    <header>
+        <img src = "Seal_of_Maryland_(reverse).svg.webp" alt = "Seal of Maryland">
+        <div class = "title">
+            
+            
+        </div>
+            <nav>
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "about.html">About</a></li>
+                    <li><a href = "parks.html">Parks</a></li>
+                    <li><a href = "attractions.html">Activites</a></li>
+                    <li><a href = "food.html">Resturants</a></li>
+                    <li><a href = "dtown.html">Dowtown Silver Spring</a></li>
+                    
+                   
+                </ul>
+                
+            </nav>
+            <button><a href = "review.html">Write a Review</a></button>
+        
+    </header>
+    
+    <div class = "formContainer"> 
+        <form action="" method = "POST" onsubmit="return validateForm();">
+            <div class = "textBoxes">
+                <div id = "Visit">
+                    <h2>Please tell us about your visit</h2>
+                </div>
+
+                <div id = "Identity">
+                    Enter your name:
+                    <input type = "text" id = "visitor" name = "visitor" placeholder="Required Field">
+                    <span class = "atx">*</span>
+                </div>
+                <br>
+                <br>
+                <div id = "Grouping">
+                    Leave a Review:
+                    <br>
+                    <br>
+                    <textarea name="reviewBox" id="reviewBox" cols="60" rows="9"></textarea>
+                </div>
+
+               
+            <div id = "sub">
+                <input type="submit" value="Send Email">
+            </div>
+        
+        
+        
+        
+        
+        
+        
+        </form>
+    </div>
+
+
+    
+</body>
+</html>
